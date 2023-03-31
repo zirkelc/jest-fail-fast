@@ -1,0 +1,14 @@
+{
+	"extends": "@tsconfig/node18/tsconfig.json",
+	"compilerOptions": {},
+	"include": [
+		"*.ts",
+	],
+	"exclude": [
+		"node_modules/**/*",
+		".serverless/**/*",
+		".webpack/**/*",
+		"_warmup/**/*",
+		".vscode/**/*"
+	]
+}
