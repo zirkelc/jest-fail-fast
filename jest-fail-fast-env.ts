@@ -27,6 +27,7 @@ export class FailFastEnvironment extends TestEnvironment {
     //   this.failedDescribeBlocks[event.test.parent.name] = true
     // }
 
+    // TODO check all parent describe blocks
     if (event.name === 'test_start' && this.failedDescribeBlocks[event.test.parent.name]) {
       event.test.mode = 'skip';
     }
